@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import classnames from "classnames";
 
 // reactstrap components
@@ -13,12 +13,12 @@ import {
 } from "reactstrap";
 import {
   BiCalendarEvent,
-  FaArchive, FaCalendar,
+  FaArchive,
   FaHome, FaImages,
   FaInfo, FaLock, FaServicestack, FaUsersCog,
 } from "react-icons/all";
 
-import Logo from "assets/img/logoMed.png";
+import Logo from "assets/img/LogoMedi.png";
 
 function IndexNavbar() {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
@@ -55,10 +55,10 @@ function IndexNavbar() {
 
             <NavbarBrand
             data-placement="bottom"
-            className="pl-5"
+            className="pl-5 w-75"
             target="_blank"
           >
-              <img src={Logo}/>
+              <img src={Logo}  alt=""/>
           </NavbarBrand>
 
           <button
@@ -170,7 +170,7 @@ function IndexNavbar() {
                   className="nav-link"
                   data-placement="bottom"
               activeClass="active"
-              to="Partners"
+              to="mainpartners"
               spy={true}
               smooth={true}
               offset={-70}
@@ -181,7 +181,7 @@ function IndexNavbar() {
             </NavItem>
 
              <NavItem>
-               <a className="text-white nav-link btn-round btn-lg btn-danger" href="/login-page">
+               <a className="text-white nav-link btn-round btn-lg btn-info" href="/login-page">
                 <FaLock/> Login
                </a>
             </NavItem>

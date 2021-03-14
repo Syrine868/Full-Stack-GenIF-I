@@ -3,6 +3,7 @@ import React from "react";
 
 // reactstrap components
 import { Container } from "reactstrap";
+import {AiOutlineDash, BsChatQuote, FaHeart, FaLine, GiFinishLine, GiFlowers} from "react-icons/all";
 // core components
 
 function IndexHeader() {
@@ -34,7 +35,12 @@ function IndexHeader() {
     />
         <Container>
           <div className="my-5 py-5">
-            <h1 className="title my-5"><em>DU FRONTALIER ,AU TRANSFRONTALIER ,A LA MEDITERRANNEE</em> .</h1>
+            <h1 className="subtitle my-4">
+                 <BsChatQuote/> The reciprocal recognition
+                  sustainable practices
+                  bearers of respect, of
+                  democracy and peace on
+                  mare nostrum . <BsChatQuote/></h1>
           </div>
         </Container>
       </div>

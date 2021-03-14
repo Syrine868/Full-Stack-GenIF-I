@@ -1,5 +1,4 @@
-import React from "react";
-// @material-ui/core components
+import * as React from "react";// @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import InputAdornment from "@material-ui/core/InputAdornment";
 // @material-ui/icons
@@ -16,11 +15,21 @@ import Button from "components/CustomButtons/Button.js";
 import CustomInput from "components/CustomInput/CustomInput.js";
 import styles from "assets/jss/material-kit-react/views/componentsSections/loginStyle.js";
 import {MessageRounded, SendRounded} from "@material-ui/icons";
-import MapContainer from "../../../components/Map/MapContainer";
+import { useGoogleMaps } from "react-hook-google-maps";
 const useStyles = makeStyles(styles);
 
 export default function SectionContact() {
-
+  const { ref, map, google } = useGoogleMaps(
+    // Use your own API key, you can get one from Google (https://console.cloud.google.com/google/maps-apis/overview)
+    "AIzaSyDnaaF42hCXhghmfzQVqvM5CEPPSJUPMdc",
+    // NOTE: even if you change options later
+    {
+      center: { lat: 0, lng: 0 },
+      zoom: 3
+    }
+  );
+  console.log(map); // instance of created Map object (https://developers.google.com/maps/documentation/javascript/reference/map)
+  console.log(google); 
 
   const classes = useStyles();
   return (
@@ -112,7 +121,7 @@ export default function SectionContact() {
           </GridItem>
 
         <GridItem xs={5} sm={5} md={5}>
-            <MapContainer/>
+        <div ref={ref} style={{ width: 400, height: 300 }} />
         </GridItem>
 
         </GridContainer>

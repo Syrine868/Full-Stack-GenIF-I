@@ -8,23 +8,11 @@ import React from "react";
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import IndexHeader from "components/Headers/IndexHeader.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
-
-// sections for this page
-import Images from "./index-sections/Images.js";
-import BasicElements from "./index-sections/BasicElements.js";
-import Navbars from "./index-sections/Navbars.js";
-import Tabs from "./index-sections/Tabs.js";
-import Pagination from "./index-sections/Pagination.js";
-import Notifications from "./index-sections/Notifications.js";
-import Typography from "./index-sections/Typography.js";
-import Javascript from "./index-sections/Javascript.js";
-import Carousel from "./index-sections/Carousel.js";
-import NucleoIcons from "./index-sections/NucleoIcons.js";
-import CompleteExamples from "./index-sections/CompleteExamples.js";
-import SignUp from "./index-sections/SignUp.js";
-import Examples from "./index-sections/Examples.js";
-import Download from "./index-sections/Download.js";
 import AboutSection from "./index-sections/AboutSection";
+import GallerySection from "./index-sections/GallerySection";
+import EventsSection from "./index-sections/EventsSection";
+import MainPartnersSection from "./index-sections/MainPartnersSection";
+import ContactSection from "./index-sections/ContactSection";
 
 function Index() {
   React.useEffect(() => {
@@ -40,23 +28,19 @@ function Index() {
   });
   return (
     <>
-      <IndexNavbar />
+      <IndexNavbar/>
       <div className="wrapper">
-        <IndexHeader />
+        <IndexHeader/>
         <div className="main">
-          <AboutSection /> {/* about section*/}
-          <Navbars /> {/* events section*/}
-          <Tabs /> {/* events section*/}
-          <Pagination /> {/* services section*/}
-          <Notifications /> {/* trainings section*/}
-          <Typography /> {/* Main partners section*/}
-          <Javascript />
-          <Carousel />
-          <NucleoIcons />
-          <CompleteExamples />
-          <SignUp />
-          <Examples />
-          <Download />
+          <AboutSection/> {/* about section*/}
+          <hr/>
+          <GallerySection/> {/* services section*/}
+           <hr/>
+          <EventsSection/> {/* trainings section*/}
+           <hr/>
+          <MainPartnersSection /> {/* Main partners section*/}
+
+          <ContactSection /> {/* Contact Section */}
         </div>
         <DarkFooter />
       </div>
