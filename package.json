@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@syncfusion/ej2-react-schedule": "^18.4.47",
     "react-rounded-image": "^2.0.11"
   }
 }

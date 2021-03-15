@@ -18,7 +18,7 @@ import {
   FaHome,
   FaInfo, FaLock, FaServicestack,
 } from "react-icons/all";
-
+import Logo from "assets/img/Logo1.png";
 import {Link} from "react-scroll";
 import {useTranslation} from "react-i18next";
 function IndexNavbar() {
@@ -70,7 +70,7 @@ function IndexNavbar() {
             target="_blank"
             title="Coded by Creative Tim"
           >
-              Samah Cherigui
+             <img src={Logo}/>
           </NavbarBrand>
 
           <button
@@ -173,12 +173,12 @@ function IndexNavbar() {
               offset={-70}
               duration={500}
               >
-               <FaCalendar/> Calendrier
+               <FaCalendar/> Calendar
               </Link>
             </NavItem>
 
              <NavItem>
-               <a className="text-white nav-link btn btn-lg btn-round btn-primary" href="/login-page">
+               <a className="text-white nav-link btn btn-lg btn-round btn-rose" href="/login-page">
                 <FaLock/> Login
                </a>
             </NavItem>

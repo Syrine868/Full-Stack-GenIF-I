@@ -78,7 +78,7 @@ function SectionContact() {
                   <Button
                     block
                     className="btn-round"
-                    color="danger"
+                    color="rose"
                     type="button"
                   >
                     <FiSend/> Send

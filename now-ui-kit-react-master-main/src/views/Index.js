@@ -13,6 +13,7 @@ import GallerySection from "./index-sections/GallerySection";
 import EventsSection from "./index-sections/EventsSection";
 import MainPartnersSection from "./index-sections/MainPartnersSection";
 import ContactSection from "./index-sections/ContactSection";
+import TrainingsSections from "./index-sections/TrainingsSections";
 
 function Index() {
   React.useEffect(() => {
@@ -34,10 +35,11 @@ function Index() {
         <div className="main">
           <AboutSection/> {/* about section*/}
           <hr/>
-          <GallerySection/> {/* services section*/}
+          <GallerySection/> {/* Gallery section*/}
            <hr/>
           <EventsSection/> {/* trainings section*/}
            <hr/>
+           <TrainingsSections/>
           <MainPartnersSection /> {/* Main partners section*/}
 
           <ContactSection /> {/* Contact Section */}

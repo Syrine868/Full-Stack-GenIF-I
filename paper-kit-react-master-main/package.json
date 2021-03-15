@@ -13,6 +13,7 @@
     "nouislider": "14.5.0",
     "react": "16.13.1",
     "react-anchor-link-smooth-scroll": "^1.0.12",
+    "react-audio-player": "^0.14.0",
     "react-bootstrap-switch": "15.5.3",
     "react-calendar": "^3.3.1",
     "react-datetime": "2.16.3",

@@ -20,9 +20,9 @@
 import React from "react";
 
 // reactstrap components
-import { Row, Container } from "reactstrap";
+import { Row, Container, NavItem } from "reactstrap";
 import Scroll from "../ScrollToTop/Scroll";
-
+import {Link} from "react-scroll";
 function DemoFooter() {
   return (
     <footer className="footer footer-black footer-white">
@@ -31,28 +31,54 @@ function DemoFooter() {
           <nav className="footer-nav">
             <ul>
               <li>
-                <a
-                  href="https://www.creative-tim.com?ref=pkr-footer"
-                  target="_blank"
-                >
-                  Gallery
-                </a>
+              <NavItem>
+
+                  <Link
+                      className="nav-link"
+                      data-placement="bottom"
+                  activeClass="active"
+                  to="gallery"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                  >
+                    Gallery
+                  </Link>
+                </NavItem>
               </li>
               <li>
-                <a
-                  href="http://blog.creative-tim.com/?ref=pkr-footer"
-                  target="_blank"
+              <NavItem>
+
+                <Link
+                    className="nav-link"
+                    data-placement="bottom"
+                activeClass="active"
+                to="services"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
                 >
                   Services
-                </a>
+                </Link>
+                </NavItem>
               </li>
               <li>
-                <a
-                  href="https://www.creative-tim.com/license?ref=pkr-footer"
-                  target="_blank"
-                >
-                  Events
-                </a>
+              <NavItem>
+              <Link
+                  className="nav-link"
+                  data-placement="bottom"
+              activeClass="active"
+              to="events"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              >
+                Events
+              </Link>
+              </NavItem>
               </li>
             </ul>
           </nav>

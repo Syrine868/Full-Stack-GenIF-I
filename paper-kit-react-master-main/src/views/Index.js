@@ -17,6 +17,7 @@ import SectionEvents from "./index-sections/SectionEvents";
 import SectionCalendar from "./index-sections/SectionCalendar";
 import SectionContact from "./index-sections/SectionContact";
 import DemoFooter from "../components/Footers/DemoFooter";
+import Audio from "components/BgAudio/Audio";
 
 function Index() {
   document.documentElement.classList.remove("nav-open");
@@ -29,11 +30,12 @@ function Index() {
 
     return (
     <>
+    <Audio/>
         <IndexNavbar />
         <IndexHeader />
         <div className="main">
         <SectionAboutUs/>
-        <hr/>
+        <hr/> 
         <SectionGallery />
         <hr/>
         <SectionServices/>
