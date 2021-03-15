@@ -185,10 +185,10 @@ function IndexNavbar() {
                </a>
             </NavItem>
 
-            <NavItem>
-               <Switch offColor="" offText="Fr" onColor="primary" onText="En" className="btn-danger"></Switch>
-              
-           
+        
+            <NavItem className="my-2 px-3 mx-4">
+              <Switch  offColor="" offText="Fr" onColor="primary" onText="En" ></Switch>
+          
             </NavItem>
           </Nav>
         </Collapse>

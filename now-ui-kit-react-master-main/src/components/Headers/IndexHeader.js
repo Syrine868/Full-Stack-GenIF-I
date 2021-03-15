@@ -25,24 +25,24 @@ function IndexHeader() {
 
   return (
     <>
-      <div className="page-header clear-filter" filter-color="blue">
+      <div className="page-header clear-filter" >
         <div
     className="page-header-image"
     style={{
       backgroundImage: "url(" + require("assets/img/bg2.jpg") + ")",
     }}
     ref={pageHeader}
-    />
+    />{/* 
         <Container>
           <div className="my-5 py-5">
-            <h1 className="subtitle my-4">
+            <h1 className="subtitle my-4 " >
                  <BsChatQuote/> The reciprocal recognition
                   sustainable practices
                   bearers of respect, of
                   democracy and peace on
                   mare nostrum . <BsChatQuote/></h1>
           </div>
-        </Container>
+        </Container>  */}
       </div>
     </>
   );

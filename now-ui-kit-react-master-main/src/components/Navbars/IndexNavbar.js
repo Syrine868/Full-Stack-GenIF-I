@@ -78,7 +78,7 @@ function IndexNavbar() {
           navbar
           isOpen={navbarCollapse}
         >
-          <Nav navbar>
+          <Nav navbar>  
             <NavItem>
               <Link
                   className="nav-link px-3"
@@ -186,11 +186,11 @@ function IndexNavbar() {
                </a>
             </NavItem>
 
-            
-            <NavItem>
-              <Switch className="btn-rose" offColor="" offText="Fr" onColor="primary" onText="En" ></Switch>
+            <NavItem className="my-2 px-3 mx-4">
+              <Switch  offColor="" offText="Fr" onColor="primary" onText="En" ></Switch>
           
             </NavItem>
+          
 
           </Nav>
         </Collapse>

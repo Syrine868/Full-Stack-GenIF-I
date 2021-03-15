@@ -1,58 +1,84 @@
 /*eslint-disable*/
 import React from "react";
+import { Link } from "react-scroll";
+import Scroll from "../ScrollToTop/Scroll";
+import {
 
-// reactstrap components
-import { Container } from "reactstrap";
+  NavItem,
+  Nav,
+  Container,
+} from "reactstrap";
+import {
+  BiCalendarEvent,
+ 
+  FaInfo,  FaServicestack
+} from "react-icons/all";
 
 function DarkFooter() {
   return (
     <footer className="footer" data-background-color="black">
       <Container>
         <nav>
-          <ul>
-            <li>
-              <a
-                href="https://www.creative-tim.com?ref=nukr-dark-footer"
-                target="_blank"
+          <ul> 
+          <NavItem>
+              <Link
+                  className="nav-link px-3"
+                  data-placement="bottom"
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
               >
-                Creative Tim
-              </a>
-            </li>
-            <li>
-              <a
-                href="http://presentation.creative-tim.com?ref=nukr-dark-footer"
-                target="_blank"
+               <FaInfo/>  About us
+              </Link>
+            </NavItem>
+            <NavItem>
+              <Link
+                  className="nav-link px-3"
+                  data-placement="bottom"
+              activeClass="active"
+              to="services"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
               >
-                About Us
-              </a>
-            </li>
-            <li>
-              <a
-                href="http://blog.creative-tim.com?ref=nukr-dark-footer"
-                target="_blank"
+               <FaServicestack/>  Services
+              </Link>
+            </NavItem>
+            <NavItem>
+              <Link
+                  className="nav-link px-3"
+                  data-placement="bottom"
+              activeClass="active"
+              to="trainings"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
               >
-                Blog
-              </a>
-            </li>
+               <BiCalendarEvent/>  Trainings
+              </Link>
+            </NavItem>
           </ul>
         </nav>
+      
         <div className="copyright" id="copyright">
-          © {new Date().getFullYear()}, Designed by{" "}
-          <a
-            href="https://www.invisionapp.com?ref=nukr-dark-footer"
-            target="_blank"
-          >
-            Invision
-          </a>
-          . Coded by{" "}
-          <a
-            href="https://www.creative-tim.com?ref=nukr-dark-footer"
-            target="_blank"
-          >
-            Creative Tim
-          </a>
+          © {new Date().getFullYear()}, Designed 
+         
+         
+         & Coded by{" "}
+          
+            Quad Squad
+        
           .
         </div>
+       <div>
+       <Scroll showBelow={250} className="text-md-right"/>
+       </div>
+
       </Container>
     </footer>
   );
