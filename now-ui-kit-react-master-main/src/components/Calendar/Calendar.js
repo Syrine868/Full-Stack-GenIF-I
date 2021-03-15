@@ -12,7 +12,7 @@ import {DataManager, WebApiAdaptor} from "@syncfusion/ej2-data";
         };
 
         const remoteData= new DataManager({
-                url :'https://js.syncfusion.com/demos/ejservices/api/Schedule/LoadData',
+                url :'',
                 adaptor : new WebApiAdaptor,
                 crossDomain: true
         });

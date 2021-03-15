@@ -12,6 +12,8 @@ import {
   Nav,
   Container,
 } from "reactstrap";
+import Switch from "react-bootstrap-switch";
+
 import {
   BiCalendarEvent,
   FaArchive, FaCalendar,
@@ -183,6 +185,11 @@ function IndexNavbar() {
                </a>
             </NavItem>
 
+            <NavItem>
+               <Switch offColor="" offText="Fr" onColor="primary" onText="En" className="btn-danger"></Switch>
+              
+           
+            </NavItem>
           </Nav>
         </Collapse>
       </Container>

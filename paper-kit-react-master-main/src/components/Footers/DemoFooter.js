@@ -30,7 +30,7 @@ function DemoFooter() {
         <Row>
           <nav className="footer-nav">
             <ul>
-              <li>
+            
               <NavItem>
 
                   <Link
@@ -46,8 +46,8 @@ function DemoFooter() {
                     Gallery
                   </Link>
                 </NavItem>
-              </li>
-              <li>
+          
+             
               <NavItem>
 
                 <Link
@@ -63,8 +63,7 @@ function DemoFooter() {
                   Services
                 </Link>
                 </NavItem>
-              </li>
-              <li>
+            
               <NavItem>
               <Link
                   className="nav-link"
@@ -79,7 +78,7 @@ function DemoFooter() {
                 Events
               </Link>
               </NavItem>
-              </li>
+             
             </ul>
           </nav>
           <div className="credits ml-auto">

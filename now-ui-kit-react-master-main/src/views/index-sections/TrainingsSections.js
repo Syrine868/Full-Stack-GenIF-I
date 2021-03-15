@@ -11,8 +11,10 @@ import Cal from "../../components/Calendar/Calendar";
 export default function TrainingsSections() {
   
   return (
-
+      <div id="trainings">
       <Cal/>
+      </div>
+
       );
 }
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-scroll";
 import classnames from "classnames";
-
+import Switch from "react-bootstrap-switch";
 // reactstrap components
 import {
   Collapse,
@@ -184,6 +184,12 @@ function IndexNavbar() {
                <a className="text-white nav-link btn-round btn-lg btn-info" href="/login-page">
                 <FaLock/> Login
                </a>
+            </NavItem>
+
+            
+            <NavItem>
+              <Switch className="btn-rose" offColor="" offText="Fr" onColor="primary" onText="En" ></Switch>
+          
             </NavItem>
 
           </Nav>
