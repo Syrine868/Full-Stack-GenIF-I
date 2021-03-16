@@ -21,7 +21,7 @@ import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import TransparentFooter from "components/Footers/TransparentFooter.js";
 import { FaLock } from "react-icons/fa";
 import LoginIcon from "assets/img/Login.png";
-import { BiLock } from "react-icons/bi";
+import { BiLock, BiSearch } from "react-icons/bi";
 function LoginPage() {
   const [firstFocus, setFirstFocus] = React.useState(false);
   const [lastFocus, setLastFocus] = React.useState(false);
@@ -53,8 +53,7 @@ function LoginPage() {
                 <Form action="" className="form" method="">
                   <CardHeader className="text-center">
                 
-                      <img src={LoginIcon} alt="Icon"/>
-                  
+                        <h2 className="subtitle"> Find your email address</h2>  
                   </CardHeader>
                   <CardBody>
                     <InputGroup
@@ -69,30 +68,13 @@ function LoginPage() {
                         </InputGroupText>
                       </InputGroupAddon>
                       <Input
-                        placeholder="Username ..."
-                        type="text"
+                        placeholder="example123@gmail.com ..."
+                        type="email"
                         onFocus={() => setFirstFocus(true)}
                         onBlur={() => setFirstFocus(false)}
                       ></Input>
                     </InputGroup>
-                    <InputGroup
-                      className={
-                        "no-border input-lg" +
-                        (lastFocus ? " input-group-focus" : "")
-                      }
-                    >
-                      <InputGroupAddon addonType="prepend">
-                        <InputGroupText>
-                          <BiLock/>
-                        </InputGroupText>
-                      </InputGroupAddon>
-                      <Input
-                        placeholder="Password ..."
-                        type="password"
-                        onFocus={() => setLastFocus(true)}
-                        onBlur={() => setLastFocus(false)}
-                      ></Input>
-                    </InputGroup>
+                
                   </CardBody>
                   <CardFooter className="text-center">
                     <Button
@@ -103,30 +85,8 @@ function LoginPage() {
                       onClick={(e) => e.preventDefault()}
                       size="lg"
                     >
-                     <FaLock/> Login
+                     <BiSearch/> Search
                     </Button>
-                    <div className="pull-left">
-                      <h6>
-                        <a
-                          className="link"
-                          href="/subscribe-page"
-                         
-                        >
-                          Create Account here 
-                        </a>
-                      </h6>
-                    </div>
-                    <div className="pull-right">
-                      <h6>
-                        <a
-                          className="link"
-                          href="/forget-password-page"
-                          
-                        >
-                          Forget password
-                        </a>
-                      </h6>
-                    </div>
                   </CardFooter>
                 </Form>
               </Card>

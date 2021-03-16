@@ -114,26 +114,29 @@
 .input-group.no-border{
     .form-control,
     .form-control + .input-group-text{
-        background-color: $opacity-gray-3;
+        background-color: white;
+        opacity: .8;
         border: medium none;
+        color: black;
         &:focus,
         &:active,
         &:active{
             border: medium none;
-            background-color: $opacity-gray-5;
+            background-color: white;
         }
     }
 
     .form-control{
         &:focus{
             & + .input-group-text{
-                background-color: $opacity-gray-5;
+                background-color: white;
             }
         }
     }
     .input-group-prepend{
       .input-group-text{
-          background-color: $opacity-gray-3;
+          background-color: white;
+          opacity: .8;
           border: none;
           border-left: transparent !important;
       }
@@ -142,7 +145,8 @@
     &.input-group-focus{
         &.no-border{
             .input-group-text{
-                background-color: $opacity-gray-5;
+                background-color: white;
+                opacity: .8;
             }
         }
     }

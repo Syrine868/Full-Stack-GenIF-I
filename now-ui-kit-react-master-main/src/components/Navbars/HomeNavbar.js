@@ -79,106 +79,25 @@ function IndexNavbar() {
           isOpen={navbarCollapse}
         >
           <Nav navbar>  
-            <NavItem>
-              <Link
+            <ul>
+              <li
                   className="nav-link px-3"
-                  data-placement="bottom"
-              activeClass="active"
-              to="home"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
               >
                <FaHome/> Home
-              </Link>
-            </NavItem>
-            <NavItem>
-              <Link
-                  className="nav-link"
-                  data-placement="bottom"
-                  activeClass="active"
-                  to="about"
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
-              >
-               <FaInfo/> About us
-              </Link>
-            </NavItem>
-            <NavItem>
-              <Link
-                  className="nav-link"
-                  data-placement="bottom"
-              activeClass="active"
-              to="gallery"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              >
-               <FaImages/> Gallery
-              </Link>
-            </NavItem>
-            <NavItem>
-              <Link
-                  className="nav-link"
-                  data-placement="bottom"
-              activeClass="active"
-              to="events"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              >
-               <FaArchive/> Events
-              </Link>
-            </NavItem>
+              </li>
+            </ul>
+           <li className="nav-link px-3">
+               Trainings
+           </li>
+            <li className="nav-link px-3">
+                Events
+            </li>
+            <li className="nav-link px-3">
+              News
+            </li>
 
-            <NavItem>
-              <Link
-                  className="nav-link"
-                  data-placement="bottom"
-              activeClass="active"
-              to="services"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              >
-               <FaServicestack/> Services
-              </Link>
-            </NavItem>
-            <NavItem>
-              <Link
-                  className="nav-link"
-                  data-placement="bottom"
-              activeClass="active"
-              to="trainings"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              >
-               <BiCalendarEvent/> Trainings
-              </Link>
-            </NavItem>
-            <NavItem>
-
-              <Link
-                  className="nav-link"
-                  data-placement="bottom"
-              activeClass="active"
-              to="mainpartners"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              >
-               <FaUsersCog/> Main Partners
-              </Link>
-            </NavItem>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             
 
              <NavItem>
                <a className="text-white nav-link btn-round btn-lg btn-info" href="/login-page">
