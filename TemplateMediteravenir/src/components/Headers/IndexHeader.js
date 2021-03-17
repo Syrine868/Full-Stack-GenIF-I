@@ -25,7 +25,7 @@ function IndexHeader() {
 
   return (
     <>
-      <div className="page-header clear-filter" >
+      <div className="page-header clear-filter"  >
         <div
     className="page-header-image"
     style={{

@@ -142,12 +142,14 @@
         box-shadow: none;
         color: $white-color;
         padding-top: 20px !important;
+        opacity: .8;
     }
     &.navbar-color{
-        background-color:$primary-color !important;
+        background-color:#497fc8 !important;
         box-shadow: none;
         color: $black-color;
         padding-top: 20px !important;
+        opacity: .8;
     }
 
     &.bg-white:not(.navbar-transparent){

@@ -72,7 +72,7 @@ function DarkFooter() {
          & Coded by{" "}
           
             Quad Squad
-        
+ 
           .
         </div>
        <div>

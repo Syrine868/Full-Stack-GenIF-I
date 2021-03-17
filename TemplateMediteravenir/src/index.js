@@ -30,6 +30,8 @@ import NucleoIcons from "views/NucleoIcons.js";
 import LoginPage from "views/examples/LoginPage.js";
 import LandingPage from "views/examples/LandingPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
+import SubscribePage from "views/examples/Subscribe";
+import ForgetPassword from "views/examples/ForgetPassword";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -51,6 +53,14 @@ ReactDOM.render(
         <Route
           path="/login-page"
           render={(props) => <LoginPage {...props} />}
+        />
+          <Route
+          path="/subscribe-page"
+          render={(props) => <SubscribePage {...props} />}
+        />
+        <Route
+          path="/forget-password-page"
+          render={(props) => <ForgetPassword {...props} />}
         />
         <Redirect to="/index" />
         <Redirect from="/" to="/index" />
