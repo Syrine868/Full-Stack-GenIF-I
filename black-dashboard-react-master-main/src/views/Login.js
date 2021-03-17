@@ -31,8 +31,6 @@ function Login() {
                                             <FormGroup>
                                                 <label>Username</label>
                                                 <Input
-
-
                                                     placeholder="Username..."
                                                     type="text"
                                                 />
